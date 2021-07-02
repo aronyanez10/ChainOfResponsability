@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LoanChainOfResponsibility.Handlers
 {
-    class CorrectAmountHandler : DefaultHandler
+    public class CorrectAmountHandler : DefaultHandler
     {
         private decimal min = 100;
         private decimal max = 1000;

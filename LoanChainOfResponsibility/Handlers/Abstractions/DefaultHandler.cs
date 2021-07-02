@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LoanChainOfResponsibility.Handlers
 {
-    class DefaultHandler : IHandler
+   public class DefaultHandler : IHandler
     {
         private IHandler _next;
         public virtual object Handle(Loan loan)

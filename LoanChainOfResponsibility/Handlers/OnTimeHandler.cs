@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LoanChainOfResponsibility.Handlers
 {
-    class OnTimeHandler : DefaultHandler
+    public class OnTimeHandler : DefaultHandler
     {
         public override object Handle(Loan loan)
         {

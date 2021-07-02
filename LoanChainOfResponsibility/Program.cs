@@ -20,7 +20,7 @@ namespace LoanChainOfResponsibility
 
 
             //Manually Test
-            Loan loan = new Loan()
+            Loan loan = new()
             {
                 OnTime = true,
                 Amount = 15000,

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LoanChainOfResponsibility.Handlers
 {
-    class CompleteDocumentation: DefaultHandler
+   public class CompleteDocumentation: DefaultHandler
     {
         public override object Handle(Loan loan)
         {
