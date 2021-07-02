@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanChainOfResponsibility", "LoanChainOfResponsibility\LoanChainOfResponsibility.csproj", "{C8DE42B2-81BD-4896-9FF6-48413F888246}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanChainOfResponsibilityTest", "LoanChainOfResponsibilityTest\LoanChainOfResponsibilityTest.csproj", "{09684C71-6573-4C54-B531-4C337F896146}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C8DE42B2-81BD-4896-9FF6-48413F888246}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8DE42B2-81BD-4896-9FF6-48413F888246}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8DE42B2-81BD-4896-9FF6-48413F888246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09684C71-6573-4C54-B531-4C337F896146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09684C71-6573-4C54-B531-4C337F896146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09684C71-6573-4C54-B531-4C337F896146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09684C71-6573-4C54-B531-4C337F896146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

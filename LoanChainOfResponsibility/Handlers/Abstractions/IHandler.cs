@@ -1,16 +1,17 @@
-﻿using System;
+﻿using LoanChainOfResponsibility.Handlers.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleLoan.Handlers
+namespace LoanChainOfResponsibility.Handlers
 {
    
     public interface IHandler
     {
         IHandler SetNext(IHandler handler);
 
-        object Handle(object request);
+        object Handle(Loan loan);
     }
 }

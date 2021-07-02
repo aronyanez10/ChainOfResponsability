@@ -1,17 +1,18 @@
-﻿using System;
+﻿using LoanChainOfResponsibility.Handlers.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleLoan.Handlers
+namespace LoanChainOfResponsibility.Handlers
 {
     class DefaultHandler : IHandler
     {
         private IHandler _next;
-        public object Handle(object request)
+        public virtual object Handle(Loan loan)
         {
-            return _next?.Handle(request);
+            return _next?.Handle(loan);
         }
 
         public IHandler SetNext(IHandler handler)

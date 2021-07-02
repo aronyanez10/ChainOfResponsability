@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LoanChainOfResponsibility.Handlers;
+using LoanChainOfResponsibility.Handlers.Models;
+using System;
 
 namespace LoanChainOfResponsibility
 {
@@ -6,7 +8,28 @@ namespace LoanChainOfResponsibility
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+
+            //steps
+            var onTime = new OnTimeHandler();
+            var correctAmount = new CorrectAmountHandler();
+            var completeDocumentation = new CompleteDocumentation();
+
+            //Set steps
+            onTime.SetNext(correctAmount).SetNext(completeDocumentation);
+
+
+            //Manually Test
+            Loan loan = new Loan()
+            {
+                OnTime = true,
+                Amount = 15000,
+                HasCompleteDocumentation = true
+            };
+
+            var result = onTime.Handle(loan);
+            if (result != null)
+            Console.WriteLine(onTime.Handle(loan));
         }
     }
 }
